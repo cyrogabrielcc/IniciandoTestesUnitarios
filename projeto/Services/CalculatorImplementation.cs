@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace projeto.Services
-{
+namespace projeto.Services;
+
     public class CalculatorImplementation
     {
         public double Somar (double n , double n2)
@@ -26,4 +26,3 @@ namespace projeto.Services
             return n / n2;
         }
     }
-}
