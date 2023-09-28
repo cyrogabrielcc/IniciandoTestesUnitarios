@@ -20,7 +20,37 @@ public class ProjTest
         Assert.Equal(10, resultSoma);
 
 
-        var result = _calc.subtrair(var1, var2);
+        var resulSubtrair = _calc.subtrair(var1, var2);
+        Assert.Equal(0, resulSubtrair);
+    }
+
+    [Fact]
+    public void Executasubtrair()
+    {
+        var var1 = 5;
+        var var2 = 5;
+
+        var resulSubtrair = _calc.subtrair(var1, var2);
+        Assert.Equal(0, resulSubtrair);
+    }
+
+    [Fact]
+    public void Executamultiplicacao()
+    {
+        var var1 = 0;
+        var var2 = 5;
+
+        var result = _calc.multiplicar(var1, var2);
         Assert.Equal(0, result);
+    }
+
+    [Fact]
+    public void Executadividir()
+    {
+        var var1 = -5*-1;
+        var var2 = 5;
+
+        var result = _calc.dividir(var1, var2);
+        Assert.Equal(1, result);
     }
 }
