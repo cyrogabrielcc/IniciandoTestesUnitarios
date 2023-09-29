@@ -10,7 +10,8 @@ namespace projeto.Services
     {
         public int ContaTexto(string texto)
         {
-            return texto.Length;     
+            int x = texto.Length; 
+            return x;    
         }
     }
 }

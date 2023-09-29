@@ -53,4 +53,18 @@ public class ProjTest
         var result = _calc.dividir(var1, var2);
         Assert.Equal(1, result);
     }
+
+    
+    [Theory]
+   /* [InlineData(50)]
+    [InlineData(6)]
+    [InlineData(4)]
+    [InlineData(8)]
+    [InlineData(0)]
+    [InlineData(90)]*/
+    [InlineData(new double[] {1,2,3,4})]
+    public void ParOuImpar(double[] nums)
+    {
+        Assert.All(nums, n => Assert.True(_calc.EhPAr(n)));
+    }
 }

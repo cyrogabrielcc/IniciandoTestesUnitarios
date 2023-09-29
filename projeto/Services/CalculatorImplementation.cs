@@ -11,18 +11,23 @@ namespace projeto.Services;
         {
             return n + n2;
         }
-          public double multiplicar (double n , double n2)
+        public double multiplicar (double n , double n2)
         {
             return n * n2;
         }
 
-          public double subtrair (double n , double n2)
+        public double subtrair (double n , double n2)
         {
             return n - n2;
         }
 
-          public double dividir (double n , double n2)
+        public double dividir (double n , double n2)
         {
             return n / n2;
+        }
+
+        public bool EhPAr (double n)
+        {
+            return n % 2 == 0;
         }
     }

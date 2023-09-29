@@ -18,11 +18,13 @@ public class ValidaString
 
 
     [Fact]
-    public void Test1()
+    public void TesteMetodoContarCaracetes()
     {
-        string txt = "implementando validações de string"
+        string txt = "implementando validações de string";
 
-        Assert.Equal(30, txt);
+        var resultado = _valida.ContaTexto(txt);
+
+        Assert.Equal(34, resultado);
     
     }
 }
